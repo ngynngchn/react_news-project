@@ -23,7 +23,7 @@ const Article = ({
 				<h3>{title}</h3>
 				<p>{description}</p>
 			</article>
-			<a href={url} target="_blank">
+			<a href={url} target="_blank" rel="noreferrer">
 				Link to article
 			</a>
 		</section>
