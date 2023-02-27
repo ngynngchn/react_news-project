@@ -1,0 +1,56 @@
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 2rem;
+}
+
+.container {
+	margin: 120px 3rem 100px 3rem;
+}
+
+.filter {
+	display: flex;
+	gap: 0.5rem;
+	margin: 1rem;
+	justify-content: flex-end;
+}
+.filter .search {
+	position: relative;
+}
+.filter .search #keywords {
+	padding: 0.5rem 0 0.5rem 33px;
+	height: fit-content;
+	width: 35px;
+	transition: all ease 0.3s;
+	border: none;
+	border-radius: 3px;
+	background: #e0e0e0;
+	box-shadow: inset 3px 3px 6px #cecece, inset -3px -3px 6px #f2f2f2;
+}
+.filter .search #keywords:hover,
+.filter .search #keywords:focus {
+	width: 160px;
+}
+.filter .search label {
+	position: absolute;
+	margin: 0.4rem 0.5rem 0.5rem;
+	width: 30px;
+	left: 0;
+	cursor: pointer;
+	transition: ease-in 0.3s;
+}
+.filter .search label img {
+	width: 20px;
+}
+
+select {
+	padding: 0.5rem;
+	height: fit-content;
+	width: 160px;
+	cursor: pointer;
+	border-radius: 3px;
+	background: #e0e0e0;
+	box-shadow: 3px 3px 6px #cecece, -3px -3px 6px #f2f2f2;
+	border: none;
+}
