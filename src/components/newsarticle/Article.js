@@ -24,7 +24,7 @@ const Article = ({
 				<p>{description}</p>
 			</article>
 			<a href={url} target="_blank">
-				Link to article{" "}
+				Link to article
 			</a>
 		</section>
 	);

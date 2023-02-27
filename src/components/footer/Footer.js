@@ -19,16 +19,16 @@ const Footer = () => {
 				Back to top
 			</button>
 			<div className="socials">
-				<a href="#">
+				<a href="https://www.facebook.com/">
 					<img src={facebook} alt="facebook icon" />
 				</a>
-				<a href="#">
+				<a href="https://www.instagram.com/">
 					<img src={instagram} alt="instagram icon" />
 				</a>
-				<a href="#">
+				<a href="https://twitter.com/?lang=de">
 					<img src={twitter} alt="twitter icon" />
 				</a>
-				<a href="#">
+				<a href="https://www.youtube.com/">
 					<img src={youtube} alt="youtube icon" />
 				</a>
 			</div>
