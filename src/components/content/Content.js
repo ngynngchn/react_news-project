@@ -9,16 +9,16 @@ import { v4 as uuidv4 } from "uuid";
 import "./Content.css";
 
 // image import
-import searchicon from "../../img/search.svg";
+// import searchicon from "../../img/search.svg";
 
-const Content = () => {
+const Content = ({ language, searchTerm }) => {
 	const [articles, setArticles] = useState([]);
-	const [searchTerm, setSearchTerm] = useState("Mensch");
-	const [language, setLanguage] = useState("de");
+	// const [searchTerm, setSearchTerm] = useState("Mensch");
+	// const [language, setLanguage] = useState("de");
 
 	useEffect(() => {
 		fetch(
-			`https://newsapi.org/v2/everything?q=${searchTerm}&language=${language}&apiKey=e843ca4542f44d908e59b6d85446fcee`
+			`https://newsapi.org/v2/everything?q=${searchTerm}&language=${language}&apiKey=222cbd6b5ad641d28c31e5377a808d3d`
 		)
 			.then((response) => response.json())
 			.then((data) => {
@@ -29,7 +29,7 @@ const Content = () => {
 
 	return (
 		<div className="container">
-			<div className="filter">
+			{/* 	<div className="filter">
 				<select
 					name="country"
 					id="country"
@@ -56,7 +56,7 @@ const Content = () => {
 						<img src={searchicon} alt="search icon" />
 					</label>
 				</div>
-			</div>
+			</div> */}
 
 			<main>
 				{articles &&
